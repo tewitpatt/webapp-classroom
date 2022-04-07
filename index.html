@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <?!= HtmlService.createHtmlOutputFromFile('css').getContent() ?>
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://drive.google.com/uc?id=1r5yHi90JD5hEvAYyP21B4DQs4roOuqkS" alt="logo">
+                </span>
+                
+                <div class="text logo-text">
+                    <span class="name">ห้องเรียนออนไลน์</span>
+                    <span class="profession">ครูธนโชค ปัถคามินทร์</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="ค้นหา...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link" id="btnMain">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">หน้าหลัก</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="btn1">
+                        <a href="#">
+                            <i class='bx bx-file icon' ></i>
+                            <span class="text nav-text">ฟอร์มส่งงาน</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="btn2">
+                        <a href="#">
+                            <i class='bx bx-book-content icon'></i>
+                            <span class="text nav-text">วิชาภาษาอังกฤษ ป.4</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link" id="btn3">
+                        <a href="#">
+                            <i class='bx bx-book-content icon'></i>
+                            <span class="text nav-text">วิชาภาษาอังกฤษ ป.5</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link" id="btn4">
+                        <a href="#">
+                            <i class='bx bx-book-content icon'></i>
+                            <span class="text nav-text">วิชาภาษาอังกฤษ ป.6</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-link" id="btn5">
+                        <a href="#">
+                            <i class='bx bx-book-content icon'></i>
+                            <span class="text nav-text">วิชาภาษาอังกฤษ ม.1</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="btn6">
+                        <a href="#">
+                            <i class='bx bx-code-block icon' ></i>
+                            <span class="text nav-text">วิชาเทคโนโลยี ป.4</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="btn7">
+                        <a href="#">
+                            <i class='bx bx-code-block icon' ></i>
+                            <span class="text nav-text">วิชาเทคโนโลยี ป.5</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="btn8">
+                        <a href="#">
+                            <i class='bx bx-code-block icon' ></i>
+                            <span class="text nav-text">วิชาเทคโนโลยี ป.6</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="btn9">
+                        <a href="#">
+                            <i class='bx bx-search-alt icon' ></i>
+                            <span class="text nav-text">ติดต่องานวิชาการ</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link" id="btn10">
+                        <a href="#">
+                            <i class='bx bxs-contact icon' ></i>
+                            <span class="text nav-text">ติดต่อสอบถามคุณครู</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">ออกจากระบบ</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">ธีมมืด</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home" id="main">
+        <div class="text">หน้าหลัก</div>
+        <?!= HtmlService.createHtmlOutputFromFile('main').getContent() ?>
+    </section>
+
+    <section class="home" id="p1">
+        <div class="text">ฟอร์มส่งงาน</div>
+        <?!= HtmlService.createHtmlOutputFromFile('p1').getContent() ?>
+    </section>
+
+    <section class="home" id="p2">
+        <div class="text">วิชาภาษาอังกฤษ และ สนุกกับภาษา ป.4</div>
+        <?!= HtmlService.createHtmlOutputFromFile('p2').getContent() ?>
+    </section>
+  
+    <section class="home" id="p3">
+        <div class="text">วิชาภาษาอังกฤษ และ สนุกกับภาษา ป.5</div>
+        <?!= HtmlService.createHtmlOutputFromFile('p3').getContent() ?>
+    </section>
+
+    <section class="home" id="p4">
+        <div class="text">วิชาภาษาอังกฤษ และ สนุกกับภาษา ป.6</div>
+        <?!= HtmlService.createHtmlOutputFromFile('p4').getContent() ?>
+    </section>
+
+    <section class="home" id="p5">
+        <div class="text">วิชาภาษาอังกฤษ ม.1</div>
+        <?!= HtmlService.createHtmlOutputFromFile('p5').getContent() ?>
+    </section>
+
+    <section class="home" id="p6">
+        <div class="text">วิชาเทคโนโลยี ป.4</div>
+        <?!= HtmlService.createHtmlOutputFromFile('p6').getContent() ?>
+    </section>
+
+    <section class="home" id="p7">
+        <div class="text">วิชาเทคโนโลยี ป.5</div>
+        <?!= HtmlService.createHtmlOutputFromFile('p7').getContent() ?>
+    </section>
+
+    <section class="home" id="p8">
+        <div class="text">วิชาเทคโนโลยี ป.6</div>
+        <?!= HtmlService.createHtmlOutputFromFile('p8').getContent() ?>
+    </section>
+
+    <section class="home" id="p9">
+        <div class="text">ติดต่องานวิชาการ</div>
+        <?!= HtmlService.createHtmlOutputFromFile('p9').getContent() ?>
+    </section>
+
+    <section class="home" id="p10">
+        <div class="text">ติดต่อสอบถามคุณครู</div>
+        <?!= HtmlService.createHtmlOutputFromFile('p10').getContent() ?>
+    </section>
+
+    <script>
+document.getElementById('main').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+
+document.getElementById('btnMain').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('main').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+})
+
+document.getElementById('btn1').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('p1').style.display = 'block' //ให้แสดง//
+document.getElementById('main').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+})
+
+document.getElementById('btn2').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('p2').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('main').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+})
+
+document.getElementById('btn3').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('p3').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('main').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+})
+
+document.getElementById('btn4').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('p4').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('main').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+})
+
+document.getElementById('btn5').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('p5').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('main').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+})
+
+document.getElementById('btn6').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('p6').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('main').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+})
+
+document.getElementById('btn7').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('p7').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('main').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+})
+
+document.getElementById('btn8').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('p8').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('main').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+})
+
+document.getElementById('btn9').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('p9').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('main').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p10').style.display = 'none' //ให้ซ่อน//
+})
+
+document.getElementById('btn10').addEventListener('click',()=>{
+  event.preventDefault()
+document.getElementById('p10').style.display = 'block' //ให้แสดง//
+document.getElementById('p1').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p2').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p3').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p4').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p5').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p6').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p7').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p8').style.display = 'none' //ให้ซ่อน//
+document.getElementById('p9').style.display = 'none' //ให้ซ่อน//
+document.getElementById('main').style.display = 'none' //ให้ซ่อน//
+})
+
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "ธีมสว่าง";
+    }else{
+        modeText.innerText = "ธีมมืด";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
